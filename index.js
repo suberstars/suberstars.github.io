@@ -1,7 +1,16 @@
-let home = document.getElementById("home");
+let home = document.getElementById('home');
 let guides = document.getElementById("guides");
-let resources = document.getElementById("resources");
+let resources = document.getElementById('resources');
 let servers = document.getElementById("servers");
 
-home.addEventListener(onclick, window.location.href="/index.html");
-guides.addEventListener(onclick, window.location.href="/guides.html");
+function alerted () {
+    alert('hello');
+}
+
+// function redirected(url) {
+//     window.location.href=url;
+// }
+
+// home.addEventListener(onclick, redirected("index.html"));
+// guides.addEventListener(onclick, redirected("guides.html"));
+resources.addEventListener(onclick, alerted);
